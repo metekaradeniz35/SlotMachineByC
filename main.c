@@ -59,6 +59,10 @@ int checkWinnings(int row, int money, int totalMoney) {
     }
     break;
   }
+  
+  if(totalMoney < 0) {
+    return 0;
+  }
   return totalMoney;
 }
 
